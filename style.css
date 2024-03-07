@@ -1,0 +1,129 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MON CSS */
+
+:root {
+  --primary: #faf0e7;
+  --secundary: #ebc6b4;
+  --neutral-900: #030f1a;
+  --accent: #0a3052;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--primary);
+  line-height: 150%;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  background-color: var(--secundary);
+  padding: 1.5rem;
+  display: grid;
+  row-gap: 1.5rem;
+  justify-items: center;
+  margin: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+img {
+  border-radius: 999px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--neutral-900);
+}
+
+p {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+q {
+  font-weight: 400;
+  color: var(--neutral-900);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  min-width: 100%;
+  display: grid;
+  row-gap: 0.75rem;
+}
+
+a,
+a:visited,
+a:active {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--neutral-900);
+  background-color: var(--primary);
+  transition: background-color 0.3s;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+a:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+  cursor: pointer;
+}
