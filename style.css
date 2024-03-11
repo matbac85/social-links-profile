@@ -75,17 +75,17 @@ article {
   background-color: var(--secundary);
   padding: clamp(1.5rem, 1.502vw + 1.148rem, 2.5rem);
   display: grid;
-  row-gap: 1.5rem;
   justify-items: center;
   margin: 1.5rem;
   border-radius: 0.75rem;
 }
 
 img {
-  border-radius: 999px;
+  border-radius: 100%;
+  margin-bottom: 1.5rem;
 }
 
-h2 {
+h1 {
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--neutral-900);
@@ -95,9 +95,10 @@ h2 {
 p {
   font-weight: 700;
   color: var(--accent);
+  margin-bottom: 1.5rem;
 }
 
-q {
+.quotation {
   font-weight: 400;
   color: var(--neutral-900);
 }
@@ -121,10 +122,24 @@ a:active {
   transition: background-color 0.3s;
   border-radius: 0.5rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 a:hover {
   background-color: var(--accent);
   color: var(--primary);
   cursor: pointer;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  margin: -1px !important;
 }
